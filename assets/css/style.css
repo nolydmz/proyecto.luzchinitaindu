@@ -6,3 +6,43 @@
     background-color: pink;
     text-align: center;
 }
+.titulo {
+    grid-area: titulo;
+    background-color: #ffc0cb;
+    padding: 10px;
+    text-align: center;
+    border: solid;
+}
+.tituloDos {
+    background-color: #fcf3e3;
+    text-align: center;
+    padding: 5px;
+}
+img {
+    border: solid;
+}
+
+.transicion {
+    transition: all 2s;
+}
+@keyframes titulo {
+    from {
+      transform: translate(-200px);
+      opacity: 0;
+    }
+    to {
+      transform: translate(0);
+    }
+}
+
+.transicion:hover {
+    width: 500px;
+    height: 500px;
+    border: #333 solid 10px;
+}
+
+.tituloAnimado {
+    animation-name: titulo;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
+}
