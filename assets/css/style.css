@@ -6,6 +6,7 @@
     background-color: pink;
     text-align: center;
 }
+
 .titulo {
     grid-area: titulo;
     background-color: #ffc0cb;
@@ -13,11 +14,14 @@
     text-align: center;
     border: solid;
 }
+
 .tituloDos {
-    background-color: #fcf3e3;
+    background-color: #2b2927;
+    color: blanchedalmond;
     text-align: center;
     padding: 5px;
 }
+
 img {
     border: solid;
 }
@@ -25,13 +29,78 @@ img {
 .transicion {
     transition: all 2s;
 }
+
+form {
+    margin: 10px;
+}
+
+.box {
+    display: flex;
+}
+
+.texto {
+    margin: 10px;
+}
+
+.centrado {
+    margin: 5%;
+}
+
+.registrate,
+.comoComprar,
+.conocenos,
+.contacto,
+.look {
+    grid-area: registrate;
+    background-color: #ffc0cb;
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+    border: solid;
+}
+
+.look {
+    grid-area: look;
+}
+
+.contacto {
+    grid-area: contacto;
+}
+
+.conocenos {
+    grid-area: conocenos;
+}
+
+.catalogo {
+    grid-area: catalogo;
+    border: solid;
+    width: 90%;
+}
+
+#gridAreas {
+    display: grid;
+    grid-template-areas:
+        "titulp"
+        "linkNav"
+        "catalogo"
+        "contacto"
+        "comoComprar"
+        "registrate"
+        "look"
+        "conocenos"
+        "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 5% 20% 1fr 1fr 1fr auto;
+}
+
 @keyframes titulo {
     from {
-      transform: translate(-200px);
-      opacity: 0;
+        transform: translate(-200px);
+        opacity: 0;
     }
+
     to {
-      transform: translate(0);
+        transform: translate(0);
     }
 }
 
@@ -45,4 +114,134 @@ img {
     animation-name: titulo;
     animation-iteration-count: 1;
     animation-duration: 5s;
+}
+
+/*  Mobile */
+@media (max-width: 480px) {
+    body {
+        display: block;
+        background-color: #fcf9f9;
+    }
+
+    nav {
+        display: block;
+    }
+
+    .logo {
+        width: 10vh;
+    }
+
+    span {
+        background-color: white;
+        text-decoration-color: blanchedalmond;
+        margin: 2px;
+        width: 100%;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    span :hover {
+        background-color: black;
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    .linkNav {
+        grid-area: linkNav;
+        display: block;
+        margin: 10px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    footer {
+        display: block;
+    }
+}
+
+/* Tablet */
+@media (min-width: 481px) and (min-width: 1023px) {
+    body {
+        display: block;
+        background-color: #ebe7e7;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    .logo {
+        width: 10vh;
+    }
+
+    span {
+        background-color: white;
+        text-decoration-color: blanchedalmond;
+        width: 100%;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    span :hover {
+        background-color: black;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    .linkNav {
+        grid-area: linkNav;
+        display: block;
+        margin: 10px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    footer {
+        display: block;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    body {
+        background-color: #ebe7e7;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    span {
+        display: inline-flex;
+        text-align: center;
+        background-color: white;
+        text-decoration-color: blanchedalmond;
+        margin: 2px;
+        width: 100%;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    span :hover {
+        background-color: black;
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    footer {
+        grid-area: footer;
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+
+    .piePagina {
+        margin: 20px;
+        text-align: justify;
+    }
+
+    form {
+        margin: 10px;
+    }
 }
