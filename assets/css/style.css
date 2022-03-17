@@ -21,7 +21,13 @@
     text-align: center;
     padding: 5px;
 }
-
+.tituloTres {
+    background-color: rgb(247, 241, 241) ;
+    text-align:left;
+}
+.margen {
+    padding: 3%;
+}
 img {
     border: solid;
 }
