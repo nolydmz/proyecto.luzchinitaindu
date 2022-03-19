@@ -141,32 +141,12 @@ form {
     .logo {
         width: 10vh;
     }
-
-    span {
-        background-color: white;
-        text-decoration-color: blanchedalmond;
-        margin: 2px;
-        width: 100%;
-        padding: 20px;
-        border-radius: 10px;
-    }
-
-    span :hover {
-        background-color: black;
-        padding: 20px;
-        border-radius: 15px;
-    }
-
-    .linkNav {
-        grid-area: linkNav;
-        display: block;
-        margin: 10px;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
     footer {
         display: block;
+        grid-area: footer;
+        background-color: black;
+        color: white;
+        text-align: center;
     }
 }
 
@@ -185,30 +165,19 @@ form {
         width: 10vh;
     }
 
-    span {
-        background-color: white;
-        text-decoration-color: blanchedalmond;
-        width: 100%;
-        padding: 20px;
-        border-radius: 10px;
-    }
-
-    span :hover {
-        background-color: black;
-        padding: 10px;
-        border-radius: 15px;
-    }
-
-    .linkNav {
+    nav {
         grid-area: linkNav;
         display: block;
         margin: 10px;
         flex-direction: row;
         justify-content: space-between;
     }
-
     footer {
         display: block;
+        grid-area: footer;
+        background-color: black;
+        color: white;
+        text-align: center;
     }
 }
 
