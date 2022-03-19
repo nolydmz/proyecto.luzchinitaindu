@@ -24,6 +24,8 @@
 .tituloTres {
     background-color: rgb(247, 241, 241) ;
     text-align:left;
+    border-radius: 10%;
+    border-left: #2b2927;
 }
 .margen {
     padding: 3%;
@@ -32,6 +34,9 @@ img {
     border: solid;
 }
 
+.fondo {
+    background-image: linear-gradient( white, pink);
+}
 .transicion {
     transition: all 2s;
 }
